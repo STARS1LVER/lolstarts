@@ -2,3 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* fonts  */
+@font-face {
+  font-family: 'beauforLol'; /* Puedes darle el nombre que desees */
+  src: url('./assets/fonts/BeaufortforLOL-Bold.otf') format('truetype'); /* Ajusta la ruta y el formato según tus archivos */
+}
+
+@font-face {
+  font-family: 'spiegeLol'; /* Puedes darle el nombre que desees */
+  src: url('./assets/fonts/Spiegel-Bold.otf') format('truetype'); /* Ajusta la ruta y el formato según tus archivos */
+}
+

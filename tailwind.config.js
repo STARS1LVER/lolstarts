@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        lolbg: '#042028',
+        lolbg: '#010A13',
         lolGold: '#C28F2C'
       }
     },
