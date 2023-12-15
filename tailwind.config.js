@@ -9,7 +9,8 @@ module.exports = {
       colors:{
         lolbg: '#111111',
         lolGold: '#C28F2C',
-        bgtitle: '#061c25'
+        bgtitle: '#061c25',
+        hoverbg: '#006680'
       }
     },
   },
