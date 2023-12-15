@@ -15,3 +15,8 @@
   src: url('./assets/fonts/Spiegel-Bold.otf') format('truetype'); /* Ajusta la ruta y el formato según tus archivos */
 }
 
+
+@font-face {
+  font-family: 'beauforItalic'; /* Puedes darle el nombre que desees */
+  src: url('./assets/fonts/BeaufortforLOL-HeavyItalic.otf') format('truetype'); /* Ajusta la ruta y el formato según tus archivos */
+}

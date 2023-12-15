@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       colors:{
         lolbg: '#111111',
-        lolGold: '#C28F2C'
+        lolGold: '#C28F2C',
+        bgtitle: '#061c25'
       }
     },
   },

@@ -12,9 +12,9 @@
 }
 
 .content-section{
-  margin-top: 70px;
+  margin-top: 80px;
   height: 100vh;
   width: 1200px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
 }
