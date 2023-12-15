@@ -22,8 +22,8 @@ export class ChampionsComponent  implements OnInit{
     this.championsService.getAllChampions().subscribe({
       next: (response) => {
         this.listAllChampions = Object.values(response);
+        console.log(this.listAllChampions.length)
 
-        console.log(response)
       },
       error: (error) => {
         console.log(`hay un error: ${error}`);

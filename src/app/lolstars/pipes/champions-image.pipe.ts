@@ -8,7 +8,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ChampionsImagePipe implements PipeTransform {
   transform( image: string ): string {
 
-    return `https://ddragon.leagueoflegends.com/cdn/13.24.1/img/champion/${image}`
+    const newImage: string = image.split(".png")[0];
+
+    return `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${newImage}_0.jpg`
 
 
   }

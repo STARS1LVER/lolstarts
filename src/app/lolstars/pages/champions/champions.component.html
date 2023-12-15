@@ -1,11 +1,12 @@
 <main>
 
 
-<section>
+<section class="content-section">
 
-
-  <div *ngFor="let champions of listAllChampions ">
-    <app-champion-card [allChampionsList]="champions" ></app-champion-card>
+  <div class="grid grid-cols-5 gap-4">
+    <div  *ngFor="let champions of listAllChampions ">
+      <app-champion-card [allChampionsList]="champions" ></app-champion-card>
+    </div>
   </div>
 
 

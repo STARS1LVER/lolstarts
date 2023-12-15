@@ -1,9 +1,11 @@
 .content-img{
-  width: 48px;
-  height: 48px;
+  width: 240px;
+  height: 281px;
+  border: 1px solid red;
 }
 
 .content-img img{
+
   width: 100%;
   height: 100%;
   object-fit: cover;
