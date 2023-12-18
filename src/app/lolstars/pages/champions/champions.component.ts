@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChampionsServiceService } from '../../services/champions-service.service';
-import { Datum } from '../../interfaces/all-champions.interface';
+import { Datum, Tag } from '../../interfaces/all-champions.interface';
 
 @Component({
   selector: 'app-champions',
@@ -10,6 +10,8 @@ import { Datum } from '../../interfaces/all-champions.interface';
 export class ChampionsComponent  implements OnInit{
   // Properties:
   public listAllChampions!: Datum[];
+  public filteredChampions = this.listAllChampions;
+
 
   constructor(private championsService: ChampionsServiceService) {}
 
@@ -29,5 +31,13 @@ export class ChampionsComponent  implements OnInit{
         console.log(`hay un error: ${error}`);
       },
     });
+  }
+
+
+  public filterByTag( tag: string ){
+
+    const tagEnum: Tag = Tag[tag as keyof typeof Tag];
+
+    this.listAllChampions = this.listAllChampions.filter( champion => champion.tags.includes(tagEnum) )
   }
 }
