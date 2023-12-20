@@ -14,26 +14,26 @@
         </h1>
       </div>
 
-      <div class="inline-flex rounded-md shadow-sm mt-5 teniendo " role="group">
-        <button (click)="getAllChampionsList()" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+      <div class="inline-flex  mt-5 teniendo boton-g " role="group">
+        <button (click)="getAllChampionsList()" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white boton-g2">
           Todos <i class="fa-solid fa-user-group fa-xs ml-1" style="color: #C28F2C;"></i>
         </button>
-        <button (click)="filterByTag('Assassin')" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300  hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+        <button (click)="filterByTag('Assassin')" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300  hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white boton-g2">
           Asesinos <i class="fa-solid fa-skull-crossbones fa-xs ml-1" style="color: #C28F2C;"></i>
         </button>
-        <button (click)="filterByTag('Fighter')" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-300 hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+        <button (click)="filterByTag('Fighter')" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-300 hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white boton-g2">
           Luchadores <i class="fa-solid fa-hand-fist fa-xs ml-1" style="color: #C28F2C;"></i>
         </button>
-        <button (click)="filterByTag('Mage')" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300  hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+        <button (click)="filterByTag('Mage')" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300  hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white boton-g2">
           Magos <i class="fa-solid fa-wand-magic  fa-xs ml-1" style="color: #C28F2C;"></i>
         </button>
-        <button (click)="filterByTag('Marksman')" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300  hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+        <button (click)="filterByTag('Marksman')" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300  hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-whiteboton-g2">
           Tiradores <i class="fa-solid fa-gun fa-xs ml-1" style="color: #C28F2C;"></i>
         </button>
-        <button (click)="filterByTag('Support')" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300  hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+        <button (click)="filterByTag('Support')" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300  hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white boton-g2">
           Apoyo <i class="fa-solid fa-handshake-angle fa-xs ml-1" style="color: #C28F2C;"></i>
         </button>
-        <button (click)="filterByTag('Tank')" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+        <button (click)="filterByTag('Tank')" type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-lolGold focus:z-10 focus:ring-2 focus:ring-lolGold focus:text-lolGold dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white boton-g2">
           Tanques <i class="fa-solid fa-shield-halved fa-xs ml-1" style="color: #C28F2C;"></i>
         </button>
       </div>
@@ -41,7 +41,7 @@
 
 
 
-    <div class="grid grid-cols-5 gap-4    " [class.fade-in-fwd]="isAnimated">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4" [class.fade-in-fwd]="isAnimated">
       <div  *ngFor="let champions of filteredChampions ">
         <app-champion-card [allChampionsList]="champions" ></app-champion-card>
       </div>

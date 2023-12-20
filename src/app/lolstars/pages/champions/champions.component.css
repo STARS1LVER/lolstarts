@@ -1,7 +1,7 @@
 
 
 
-.content-card{
+/* .content-card{
   border: 1px solid green;
   padding: 20px;
   display: grid;
@@ -9,7 +9,13 @@
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
 
+} */
+
+.content-main{
+  height: 100vh;
+
 }
+
 
 .content-section{
   margin-top: 80px;
@@ -21,13 +27,6 @@
   /* border: 1px solid red; */
 
 }
-
-.content-main{
-  height: 100vh;
-
-}
-
-
 
 
 
@@ -65,4 +64,54 @@
 
   /* letter-spacing: 1.12px; */
   /* text-wrap: wrap; */
+}
+
+
+@media screen and (max-width: 600px) {
+  .elige{
+    font-family: 'beauforItalic';
+    height: 200px;
+    letter-spacing: 1px;
+    line-height: 60px;
+    font-size: 24px;
+
+  }
+
+  .campeon{
+    font-size: 39px;
+  }
+
+  .content-section{
+    padding: 20px;
+    margin-top: 80px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    /* border: 1px solid red; */
+
+  }
+
+  .content-text{
+    /* border: 1px solid red; */
+    width: 300px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boton-g{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .boton-g2{
+    margin: 1px;
+  }
+
 }
