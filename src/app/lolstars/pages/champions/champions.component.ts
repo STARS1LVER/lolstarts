@@ -10,7 +10,8 @@ import { Datum, Tag } from '../../interfaces/all-champions.interface';
 export class ChampionsComponent  implements OnInit {
   // Properties:
   public listAllChampions!: Datum[];
-  public filteredChampions!: Datum []
+  public filteredChampions!: Datum [];
+  public isAnimated: boolean = false;
 
 
   constructor(private championsService: ChampionsServiceService) {}
@@ -50,6 +51,10 @@ export class ChampionsComponent  implements OnInit {
   public filterByTag( tag: string ): void {
     // llamamos la variable que tiene la copia y utlizamos la funcion filter el cual nos permite filtrar en este campo los campeones que tengan incluido el tag
     this.filteredChampions = this.listAllChampions.filter( champion => champion.tags.includes(tag as Tag) )
+    this.isAnimated = true;
+    setTimeout(() => {
+      this.isAnimated = false;
+    }, 500);
     console.log(this.filteredChampions)
   }
 }

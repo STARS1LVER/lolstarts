@@ -13,7 +13,6 @@
 
 .content-section{
   margin-top: 80px;
-  height: 100vh;
   width: 1200px;
   display: flex;
   flex-direction: column;
@@ -23,6 +22,10 @@
 
 }
 
+.content-main{
+  height: 100vh;
+
+}
 
 
 
