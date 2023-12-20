@@ -33,15 +33,21 @@
 
 .content-text{
   /* border: 1px solid red; */
-  width: 550px;
+  width: 950px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .elige{
   font-family: 'beauforItalic';
+  height: 200px;
   letter-spacing: 1px;
   line-height: 80px;
   font-size: 24px;
+
 }
 
 
