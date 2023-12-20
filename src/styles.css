@@ -167,3 +167,9 @@
     opacity: 1;
   }
 }
+
+
+
+body, body:hover, a, a:hover , button, button:hover{
+  cursor: url('assets/image/cursor-_2_.cur'), auto;
+}
