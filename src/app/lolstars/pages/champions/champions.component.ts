@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ChampionsServiceService } from '../../services/champions-service.service';
 import { Datum, Tag } from '../../interfaces/all-champions.interface';
 
@@ -7,10 +7,10 @@ import { Datum, Tag } from '../../interfaces/all-champions.interface';
   templateUrl: './champions.component.html',
   styleUrls: ['./champions.component.css'],
 })
-export class ChampionsComponent  implements OnInit{
+export class ChampionsComponent  implements OnInit {
   // Properties:
   public listAllChampions!: Datum[];
-  public filteredChampions = this.listAllChampions;
+  public filteredChampions!: Datum []
 
 
   constructor(private championsService: ChampionsServiceService) {}
@@ -20,10 +20,19 @@ export class ChampionsComponent  implements OnInit{
     this.getAllChampionsList()
   }
 
-  public getAllChampionsList() {
+  /**
+   * Este metodo nos permite traer los campeones y asignarlos a una
+   * variable para renderizarlos
+   * @param void
+   * @returns void
+   */
+  public getAllChampionsList(): void {
     this.championsService.getAllChampions().subscribe({
       next: (response) => {
+        // convertimos este objeto en un array con sus valores
         this.listAllChampions = Object.values(response);
+        // Creamos una copia y se la asignamos a la variable filtered
+        this.filteredChampions = [...this.listAllChampions]
         console.log(this.listAllChampions.length)
 
       },
@@ -33,11 +42,14 @@ export class ChampionsComponent  implements OnInit{
     });
   }
 
-
-  public filterByTag( tag: string ){
-
-    const tagEnum: Tag = Tag[tag as keyof typeof Tag];
-
-    this.listAllChampions = this.listAllChampions.filter( champion => champion.tags.includes(tagEnum) )
+  /**
+   * Metodo para filtrar por tipo de campeon
+   * @param tag tipo string
+   * @returns void
+   */
+  public filterByTag( tag: string ): void {
+    // llamamos la variable que tiene la copia y utlizamos la funcion filter el cual nos permite filtrar en este campo los campeones que tengan incluido el tag
+    this.filteredChampions = this.listAllChampions.filter( champion => champion.tags.includes(tag as Tag) )
+    console.log(this.filteredChampions)
   }
 }
