@@ -1,4 +1,4 @@
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnChanges, OnInit, QueryList, SimpleChanges, ViewChild, ViewChildren } from '@angular/core';
 import { ChampionsServiceService } from '../../services/champions-service.service';
 import { Datum, Tag } from '../../interfaces/all-champions.interface';
 
@@ -7,15 +7,23 @@ import { Datum, Tag } from '../../interfaces/all-champions.interface';
   templateUrl: './champions.component.html',
   styleUrls: ['./champions.component.css'],
 })
-export class ChampionsComponent  implements OnInit {
+export class ChampionsComponent  implements OnInit, AfterViewInit {
   // Properties:
   public listAllChampions!: Datum[];
   public filteredChampions!: Datum [];
   public isAnimated: boolean = false;
 
+  @ViewChildren('button') button!: QueryList<ElementRef>;
+
 
   constructor(private championsService: ChampionsServiceService) {}
 
+  ngAfterViewInit(): void {
+    this.button.forEach(btn => {
+      const audioclick = new Audio('assets/sounds/hover3.mp3')
+      btn.nativeElement.onclick = () => audioclick.play();
+    })
+  }
 
   ngOnInit(): void {
     this.getAllChampionsList()

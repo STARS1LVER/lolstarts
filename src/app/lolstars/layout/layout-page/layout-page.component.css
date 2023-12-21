@@ -1,5 +1,5 @@
 .main-t {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,4 +24,11 @@
 
 .header-lol{
   border-bottom: 2.5px solid #C28F2C;
+}
+@media screen and (max-width: 600px) {
+
+.text-resp{
+  color: black;
+}
+
 }

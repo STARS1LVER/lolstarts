@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { initFlowbite } from 'flowbite';
 
 @Component({
@@ -10,9 +10,13 @@ export class AppComponent implements OnInit {
   title = 'lolstars';
 
 
+
+
   ngOnInit(): void {
     initFlowbite()
   }
+
+
 
 
 }
