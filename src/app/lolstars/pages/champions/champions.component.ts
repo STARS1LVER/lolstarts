@@ -64,6 +64,7 @@ export class ChampionsComponent  implements OnInit, AfterViewInit {
     // llamamos la variable que tiene la copia y utlizamos la funcion filter el cual nos permite filtrar en este campo los campeones que tengan incluido el tag
     this.filteredChampions = this.listAllChampions.filter( champion => champion.tags.includes(tag as Tag) )
     this.isAnimated = true;
+    // realizamos un set time out para establecerle una animacion cada ves que se precione un boton de filtro 
     setTimeout(() => {
       this.isAnimated = false;
     }, 500);
