@@ -13,11 +13,14 @@ export class ChampionsComponent  implements OnInit, AfterViewInit {
   public filteredChampions!: Datum [];
   public isAnimated: boolean = false;
 
+  // Obtenemos una referencia del boton que hace el sonido
   @ViewChildren('button') button!: QueryList<ElementRef>;
 
 
+  // Inyectamos en el constructor el servicio
   constructor(private championsService: ChampionsServiceService) {}
 
+  // usamos este ciclo de vida para que se aplique el sonido luego que el html este creado
   ngAfterViewInit(): void {
     this.button.forEach(btn => {
       const audioclick = new Audio('assets/sounds/hover3.mp3')
@@ -25,6 +28,7 @@ export class ChampionsComponent  implements OnInit, AfterViewInit {
     })
   }
 
+  // Obtenemos la lista de campeones
   ngOnInit(): void {
     this.getAllChampionsList()
   }
