@@ -27,7 +27,7 @@ export class ChampionsServiceService {
   }
 
   public getInfoDetailsChampions( nameChampions: string ): Observable<InfoC>{
-    return this.httpClient.get<InfoChampion>(`${this.baseUrl}champion/${nameChampions}`)
+    return this.httpClient.get<InfoChampion>(`${this.baseUrl}champion/${nameChampions}.json`)
     .pipe(
       map( response => response.data )
     )

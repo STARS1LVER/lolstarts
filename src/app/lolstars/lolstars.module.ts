@@ -6,6 +6,7 @@ import { LayoutPageComponent } from './layout/layout-page/layout-page.component'
 import { LolStarsRoutingModule } from './lolstars-routing.module';
 import { ChampionCardComponent } from './components/champion-card/champion-card.component';
 import { ChampionsImagePipe } from './pipes/champions-image.pipe';
+import { InfoChampionsPipe } from './pipes/info-champions.pipe';
 
 
 
@@ -17,7 +18,8 @@ import { ChampionsImagePipe } from './pipes/champions-image.pipe';
     InfoChampionsComponent,
     LayoutPageComponent,
     ChampionCardComponent,
-    ChampionsImagePipe
+    ChampionsImagePipe,
+    InfoChampionsPipe
 
 
   ],

@@ -1,7 +1,14 @@
 <main>
 
 
-  <section>
+  <section class="section-info" *ngIf="infoChampion" [ngStyle]="{
+    'background-image': 'linear-gradient(0deg, rgba(11, 17, 25,1) 13%, rgba(0,191,35,0) 100%), url(' + ( infoChampion.image.full | infoChampionsImage) + ')'
+  }">
+
+
+    <div>
+      <h3> {{infoChampion}} </h3>
+    </div>
 
 
 
@@ -10,7 +17,6 @@
 
 
 
-    
   </section>
 
 

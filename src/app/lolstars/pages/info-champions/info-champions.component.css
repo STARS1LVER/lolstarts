@@ -1,0 +1,42 @@
+main{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b1119;
+}
+
+
+
+
+.section-info{
+  display: flex ;
+  min-height: 100vh;
+  width: 1518px;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  main{
+    height: 100%;
+    width: auto;
+  }
+  .section-info{
+    width: 100vh;
+  }
+
+
+
+
+}
