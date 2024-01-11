@@ -1,23 +1,24 @@
+
 <main>
 
 
-  <section class="section-info" *ngIf="infoChampion" [ngStyle]="{
-    'background-image': 'linear-gradient(0deg, rgba(11, 17, 25,1) 13%, rgba(0,191,35,0) 100%), url(' + ( infoChampion.image.full | infoChampionsImage) + ')'
-  }">
+<section class="section-info"  *ngIf="infoChampion" [ngStyle]="{
+  'background-image': 'linear-gradient(0deg, rgba(0,0,0,1) 13%, rgba(0,191,35,0) 100%), url(' + ( infoChampion.image.full | infoChampionsImage ) + ')'
+}">
 
 
-    <div>
-      <h3> {{infoChampion}} </h3>
-    </div>
+<div>
+  <h3>  {{ infoChampion.title}}  </h3>
+  <h1> {{infoChampion.id}} </h1>
+
+  <div>
+    <p> Rol: {{ infoChampion.tags }} </p>
+    <p> Dificultad: {{ infoChampion.info.difficulty | dificultadChampions }}  </p>
+  </div>
+</div>
 
 
-
-
-
-
-
-
-  </section>
+</section>
 
 
 

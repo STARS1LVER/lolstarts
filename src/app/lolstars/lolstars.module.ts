@@ -7,6 +7,7 @@ import { LolStarsRoutingModule } from './lolstars-routing.module';
 import { ChampionCardComponent } from './components/champion-card/champion-card.component';
 import { ChampionsImagePipe } from './pipes/champions-image.pipe';
 import { InfoChampionsPipe } from './pipes/info-champions.pipe';
+import { DificultadChmapionPipe } from './pipes/dificultad-champions.pipe';
 
 
 
@@ -19,7 +20,8 @@ import { InfoChampionsPipe } from './pipes/info-champions.pipe';
     LayoutPageComponent,
     ChampionCardComponent,
     ChampionsImagePipe,
-    InfoChampionsPipe
+    InfoChampionsPipe,
+    DificultadChmapionPipe
 
 
   ],
