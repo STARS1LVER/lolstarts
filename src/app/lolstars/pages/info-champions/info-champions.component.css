@@ -38,6 +38,11 @@ align-items: center;
   width: 300px;
 }
 
+.titles{
+  border: 1px solid yellow;
+  text-align: center;
+}
+
 
 
 
@@ -60,6 +65,25 @@ align-items: center;
   /* border: 1px solid red; */
   /* transform: skewX(-40deg); */
 }
+
+
+
+.card-dif{
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid red; */
+  margin: 1px;
+  background-color: none;
+}
+
+
+
+.filled {
+  background-color: blue;
+}
+
+
+
 
 
 

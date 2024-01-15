@@ -13,6 +13,7 @@ export class InfoChampionsComponent implements OnInit {
 
   // Properties:
   public infoChampion!: InfoC
+  public number:number = 3;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -41,12 +42,26 @@ export class InfoChampionsComponent implements OnInit {
       }
     })
 
+  }
+
+
+  public showColorBox(dificult: number, index: number ): boolean {
+
+    if( dificult <= 4 ){
+      console.log(dificult, index)
+      return index === 0;
+    } else if( dificult <= 7 ){
+      console.log(dificult)
+      return index < 2;
+    } else {
+      console.log(dificult)
+      return index < 3;
+    }
+
+    
 
   }
 
-  public showChampion(): void {
-    console.log(this.infoChampion)
-  }
 }
 
 

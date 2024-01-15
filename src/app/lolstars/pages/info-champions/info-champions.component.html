@@ -1,5 +1,5 @@
 
-<main  [ngStyle]="{
+<main *ngIf="infoChampion" [ngStyle]="{
   'background-image': 'linear-gradient(0deg, rgba(0,0,0,1) 13%, rgba(0,191,35,0) 100%), url(' + ( infoChampion.image.full | infoChampionsImage) + ')'
 }">
 
@@ -10,8 +10,10 @@
 
   <div class="content-text">
 
-    <h3 class="dicho-champion">  {{infoChampion.title | uppercase }} </h3>
-    <h1 class="title-champions"> {{infoChampion.id | uppercase}} </h1>
+    <div class="titles">
+      <h3 class="dicho-champion">  {{infoChampion.title | uppercase }} </h3>
+      <h1 class="title-champions"> {{infoChampion.id | uppercase}} </h1>
+    </div>
 
     <div class="content-lore">
       <p>
@@ -20,6 +22,11 @@
     </div>
 
     <div class="content-c-d">
+
+      <div class="card-dif" *ngFor="let card of [0,1,2]; let i = index" [class.filled]="{'filled': showColorBox(3, i)}">
+
+      </div>
+
       <p>
         <span> Dificultad:  </span>
         {{ infoChampion.info.difficulty | dificultadChampions }}

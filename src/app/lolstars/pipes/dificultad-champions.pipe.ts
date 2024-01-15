@@ -13,7 +13,7 @@ export class DificultadChmapionPipe implements PipeTransform {
       case 1:
       case 2:
       case 3:
-      case 5 :
+      case 4 :
         return dificultad = 'Facil'
         break;
       case 0:
