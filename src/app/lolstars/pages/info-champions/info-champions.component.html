@@ -1,25 +1,31 @@
 
-<main>
+<main  [ngStyle]="{
+  'background-image': 'linear-gradient(0deg, rgba(0,0,0,1) 13%, rgba(0,191,35,0) 100%), url(' + ( infoChampion.image.full | infoChampionsImage) + ')'
+}">
 
 
 <section class="content-section">
 
-  <div class="content-img" >
-    <img [src]="infoChampion.image.full | infoChampionsImage" alt="">
-  </div>
+
 
   <div class="content-text">
-    <h3>  {{infoChampion.title}} </h3>
-    <h1> {{infoChampion.id}} </h1>
-    <div class="content-c-d">
 
+    <h3 class="dicho-champion">  {{infoChampion.title | uppercase }} </h3>
+    <h1 class="title-champions"> {{infoChampion.id | uppercase}} </h1>
 
+    <div class="content-lore">
       <p>
-        <span> Dificultad </span>
+        {{infoChampion.lore}}
+      </p>
+    </div>
+
+    <div class="content-c-d">
+      <p>
+        <span> Dificultad:  </span>
         {{ infoChampion.info.difficulty | dificultadChampions }}
       </p>
-
     </div>
+
   </div>
 
 </section>

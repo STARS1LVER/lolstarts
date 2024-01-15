@@ -1,23 +1,42 @@
 main{
-  background-color: #030A13;
-  height: 100vh;
+/* border: 1px solid yellow; */
+width: 100vw;
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex ;
+justify-content: center;
+align-items: center;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
 }
 
 
 .content-section{
+  width: 1300px;
+  height: 600px;
   border: 1px solid red;
   display: flex;
+  padding: 10px;
+}
+
+.dicho-champion{
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-family: 'beauforItalic';
+}
+
+.title-champions{
+  font-size: 108px;
+  font-family: 'beauforItalic';
 }
 
 
-
-
-
-
+.content-lore{
+  border: 1px solid hotpink;
+  width: 300px;
+}
 
 
 
@@ -38,7 +57,7 @@ main{
 
 .content-text{
   color: #FFFF;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* transform: skewX(-40deg); */
 }
 
