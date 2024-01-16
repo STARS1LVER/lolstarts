@@ -45,20 +45,24 @@ export class InfoChampionsComponent implements OnInit {
   }
 
 
-  public showColorBox(dificult: number, index: number ): boolean {
+  public showColorBox(dificult: number ): number {
 
-    if( dificult <= 4 ){
-      console.log(dificult, index)
-      return index === 0;
-    } else if( dificult <= 7 ){
+    if(dificult === 0 ){
+      return 2
+    } else if( dificult >= 1 && dificult <= 4 ){
       console.log(dificult)
-      return index < 2;
+      return 1;
+    } else if( dificult >= 5 && dificult <= 7 ){
+      console.log(dificult)
+      return 2;
+    } else if(dificult >= 8 && dificult <= 10 )  {
+      console.log(dificult)
+      return 3;
     } else {
-      console.log(dificult)
-      return index < 3;
+      return 0
     }
 
-    
+
 
   }
 

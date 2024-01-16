@@ -23,7 +23,7 @@
 
     <div class="content-c-d">
 
-      <div class="card-dif" *ngFor="let card of [0,1,2]; let i = index" [class.filled]="{'filled': showColorBox(3, i)}">
+      <div class="card-dif" *ngFor="let card of [0,1,2]; index as i " [class.filled]=" i < showColorBox(infoChampion.info.difficulty)">
 
       </div>
 
