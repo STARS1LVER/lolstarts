@@ -14,11 +14,11 @@ align-items: center;
 
 
 .content-section{
-  width: 1300px;
-  height: 600px;
+  width: 1400px;
+  height: 700px;
   border: 1px solid red;
   display: flex;
-  padding: 10px;
+  padding: 15px;
 }
 
 .dicho-champion{
@@ -69,20 +69,40 @@ align-items: center;
 
 
 .card-dif{
-  width: 40px;
-  height: 40px;
-  border: 1px solid red;
+  width: 23px;
+  height: 15px;
+  background-color: #013241;
   margin: 1px;
   background-color: none;
+  transform: skewX(-40deg);
 }
 
+.cont-card-d{
+  display: flex;
+
+}
 
 
 .filled {
-  background-color: blue;
+  background-color: #08d7f7;
+
 }
 
 
+.content-card-p{
+  border: 1px solid greenyellow;
+}
+
+
+.dificultad-content{
+  border: 1px solid gold;
+  font-family: 'spiegeRegular';
+  text-transform: uppercase ;
+  font-size: 10px;
+  line-height: 11.5px;
+  letter-spacing: 1.5px;
+  color: #d0a85c;
+}
 
 
 

@@ -21,14 +21,16 @@
       </p>
     </div>
 
-    <div class="content-c-d">
+    <div class="content-card-p">
 
-      <div class="card-dif" *ngFor="let card of [0,1,2]; index as i " [class.filled]=" i < showColorBox(infoChampion.info.difficulty)">
+      <div class="cont-card-d">
+        <div class="card-dif" *ngFor="let card of [0,1,2]; index as i " [class.filled]=" i < showColorBox(infoChampion.info.difficulty)">
+      </div>
 
       </div>
 
-      <p>
-        <span> Dificultad:  </span>
+      <p class="dificultad-content">
+        <span class="text-white"> Dificultad  </span> <br>
         {{ infoChampion.info.difficulty | dificultadChampions }}
       </p>
     </div>
