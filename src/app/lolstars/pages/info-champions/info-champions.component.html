@@ -55,6 +55,18 @@
   </div>
 
 
+    <div *ngFor="let skin of infoChampion.skins">
+      <div>
+        <img [src]="infoChampion.id| skinImage:skin.num" alt="">
+      </div>
+
+    </div>
+
+
+
+
+
+
 
 
 </section>

@@ -8,6 +8,7 @@ import { ChampionCardComponent } from './components/champion-card/champion-card.
 import { ChampionsImagePipe } from './pipes/champions-image.pipe';
 import { InfoChampionsPipe } from './pipes/info-champions.pipe';
 import { DificultadChmapionPipe } from './pipes/dificultad-champions.pipe';
+import { SkinImagePipe } from './pipes/skinChampions.pipe';
 
 
 
@@ -21,7 +22,8 @@ import { DificultadChmapionPipe } from './pipes/dificultad-champions.pipe';
     ChampionCardComponent,
     ChampionsImagePipe,
     InfoChampionsPipe,
-    DificultadChmapionPipe
+    DificultadChmapionPipe,
+    SkinImagePipe
 
 
   ],
