@@ -12,11 +12,19 @@ align-items: center;
 
 }
 
+.content-text{
+  /* border: 1px solid aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .content-section{
   width: 1400px;
   height: 700px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   padding: 15px;
 }
@@ -34,13 +42,14 @@ align-items: center;
 
 
 .content-lore{
-  border: 1px solid hotpink;
+  border: 0.1px solid #333A42;
   width: 300px;
   font-family: 'spiegeRegular';
+  padding: 10px;
 }
 
 .titles{
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   text-align: center;
 }
 
@@ -80,6 +89,7 @@ align-items: center;
 
 .cont-card-d{
   display: flex;
+  margin-bottom: 4px;
 
 }
 
@@ -91,7 +101,9 @@ align-items: center;
 
 
 .content-card-p{
-  /* border: 1px solid greenyellow; */
+  border: 0.1px solid #333A42;
+  margin-top: 2px;
+  padding: 3px;
   display: flex;
   width: 300px;
   justify-content: space-around;
@@ -100,14 +112,27 @@ align-items: center;
 
 
 .dificultad-content{
-  margin-top: 1px;
   /* border: 1px solid rgb(255, 0, 166); */
   font-family: 'spiegeRegular';
   text-transform: uppercase ;
   font-size: 10px;
-  line-height: 11.5px;
+  line-height: 13px;
   letter-spacing: 1.5px;
   color: #d0a85c;
+  text-align: center;
+}
+
+.cont-rol{
+  margin-top: 5px;
+}
+
+.rol{
+  font-family: 'spiegeRegular';
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d0a85c;
+
 }
 
 
@@ -116,6 +141,18 @@ align-items: center;
   /* background-color: aliceblue; */
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
